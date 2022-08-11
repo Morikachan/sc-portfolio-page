@@ -1,0 +1,165 @@
+* {
+  --primary-color: #ffdede;
+  --link-color: #ff487e;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+}
+
+h1 {
+  font-size: 66px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28px;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.hero {
+  padding: 80px 0;
+  background-color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 32px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-links {
+  display: flex;
+}
+
+.btn-links a {
+  margin-right: 40px;
+  padding: 10px 40px;
+  border: 2px solid #ff487e;
+  color: #ff487e;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-links a:hover {
+  padding: 10px 40px;
+  border: 2px solid var(--link-color);
+  background-color: var(--link-color);
+  color: #ffedff;
+  transform: translateY(-4px);
+}
+
+.btn-branding-outline {
+  margin-top: 12px;
+  padding: 15px 30px;
+  background-color: var(--link-color);
+  border: 1px solid var(--link-color);
+  color: #ffedff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.btn-branding-outline:hover {
+  background-color: var(--link-color);
+  border: 1px solid var(--link-color);
+  color: #ffedff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 37px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .personal-img {
+    display: block;
+    margin: 40px auto 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1em;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .hero-info {
+    text-align: center;
+  }
+
+  .btn-links {
+    justify-content: space-evenly;
+  }
+
+  .btn-links a {
+    margin-right: 0;
+  }
+
+  .personal-img {
+    max-width: 360px;
+  }
+
+  .projects-section {
+    text-align: center;
+  }
+}
